@@ -4,7 +4,7 @@ CPP			= $(wildcard *.cpp)
 PROGRAMS	= $(CPP:%.cpp=%) 
 CFILES		= $(wildcard *.c)
 PROGRAMC	= $(CFILES:%.c=%) 
-LIBRARIES	= cppunit allegro allegro_main
+LIBRARIES	= cppunit allegro allegro_main allegro_primitives allegro_image
 DEPS		= cppunit_run.inc
 
 CC          = gcc

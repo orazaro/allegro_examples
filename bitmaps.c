@@ -1,3 +1,4 @@
+/* from http://wiki.allegro.cc/index.php?title=Allegro_5_API_Tutorials */
 #include <stdio.h>
 #include <allegro5/allegro.h>
  
