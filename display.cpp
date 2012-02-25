@@ -1,5 +1,6 @@
 #include <allegro5/allegro.h>
 #include <iostream>
+#include <typeinfo>
 
 int test_allegro()
 {
@@ -27,7 +28,13 @@ int test_allegro()
 
 int main(int argc, char *argv[])
 {
-    test_allegro();
-
+    try 
+    {   
+        test_allegro();
+    } 
+    catch ( ... ) 
+    {
+        std::cerr << "exception caught: " << std::endl;
+    }
     return 0;
 }
